@@ -13,7 +13,10 @@ public class Main {
 
         }
 
+
         ElencoInteri integerBonus = new ElencoInteri();
+
+        System.out.println("new elements:");
         integerBonus.addElemento(2);
         integerBonus.addElemento(3);
 
