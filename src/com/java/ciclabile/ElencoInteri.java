@@ -11,11 +11,6 @@ public class ElencoInteri {
 
     }
 
-    //for the bonus
-    public ElencoInteri() {
-        this.arrayInt= new int[0];
-    }
-
     public int[] getArrayInt() {
         return this.arrayInt;
     }
@@ -48,21 +43,24 @@ public class ElencoInteri {
 
     }
 
+    // for the bonus
+    public ElencoInteri() {
+        this.arrayInt = new int[0];
+    }
+
     public void addElemento(int element) {
 
         int[] arrayClone = new int[arrayInt.length + 1];
 
-        for(int i=0; i< arrayInt.length; i++) {
+        for (int i = 0; i < arrayInt.length; i++) {
 
             arrayClone[i] = arrayInt[i];
 
         }
 
         arrayClone[arrayInt.length] = element;
-        arrayInt=arrayClone;
+        arrayInt = arrayClone;
 
     }
-
-
 
 }
